@@ -1,5 +1,7 @@
 public class BinaryTree<Key extends Comparable<Key>, Value> {
-	BinaryTree(){};
+	BinaryTree() {
+	};
+
 	private class Node {
 		private Key key;
 		private Value value;
@@ -18,7 +20,6 @@ public class BinaryTree<Key extends Comparable<Key>, Value> {
 
 	public void addNode(Key k, Value v) {
 		treeAddNode(k, v);
-		System.out.println("node was sucseccfully added");
 	}
 
 	private void treeAddNode(Key k, Value v) {
@@ -54,7 +55,6 @@ public class BinaryTree<Key extends Comparable<Key>, Value> {
 
 	public void deleteNode(Key k) {
 		treeRemoveNode(k);
-		System.out.println("node deleted successfully!");
 	}
 
 	private void treeRemoveNode(Key k) {
